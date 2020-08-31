@@ -10,14 +10,13 @@
 	position: relative;
 	width: 275px;
 
-
 	img {
 		position: absolute;
 		width: 20px;
 		top: 50%;
 		right: 10px;
 		transform: translateY(-50%);
-		transition: .3s;
+		transition: 0.3s;
 
 		&.right {
 			left: 3px;
@@ -41,12 +40,11 @@
 }
 
 .input {
-
 	&__filter {
 		border: 2px solid $dark-blue;
 		width: 100%;
 		padding: 10px;
-		transition: .3s;
+		transition: 0.3s;
 
 		&::placeholder {
 			color: $dark-gray;
@@ -95,7 +93,7 @@
 			}
 
 			&:before {
-				content: '> '
+				content: '> ';
 			}
 
 			&:hover,
@@ -107,11 +105,11 @@
 	}
 
 	.show {
-		display:inline-block;
+		display: inline-block;
 	}
 
 	.hide {
-		display:none;
+		display: none;
 	}
 }
 

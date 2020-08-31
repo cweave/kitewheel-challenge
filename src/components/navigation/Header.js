@@ -1,14 +1,12 @@
 import React from 'react';
 import Navigation from './Navigation';
 
-function Header(props) {
-
+const Header = () => {
 	return (
 		<div className="nav-bar">
 			<h1>kitewheel</h1>
 			<Navigation />
 		</div>
-
 	);
 };
 
