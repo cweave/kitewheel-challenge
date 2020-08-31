@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/6e038544-85fa-4361-b65f-d8f61b6764c4/deploy-status)](https://app.netlify.com/sites/cweaver-kitewheel-challenge/deploys)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
