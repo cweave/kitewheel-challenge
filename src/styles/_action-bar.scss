@@ -1,9 +1,12 @@
 .action-bar {
 	margin: 1.5em 0;
 	display: grid;
-	grid-template-columns: 1fr 275px 175px;
 	grid-gap: 1em;
-	align-items: center;
+
+	@media screen and (min-width: 760px) {
+		grid-template-columns: 1fr 275px 175px;
+		align-items: center;
+	}
 }
 
 .form-control {
@@ -121,6 +124,7 @@
 	transition: all 0.6s ease;
 	position: relative;
 	pointer-events: all;
+	max-width: 275px;
 
 	&:focus,
 	&:hover {
