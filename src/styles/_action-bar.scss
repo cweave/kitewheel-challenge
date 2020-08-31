@@ -1,0 +1,144 @@
+.action-bar {
+	margin: 1.5em 0;
+	display: grid;
+	grid-template-columns: 1fr 275px 175px;
+	grid-gap: 1em;
+	align-items: center;
+}
+
+.form-control {
+	position: relative;
+	width: 275px;
+
+
+	img {
+		position: absolute;
+		width: 20px;
+		top: 50%;
+		right: 10px;
+		transform: translateY(-50%);
+		transition: .3s;
+
+		&.right {
+			left: 3px;
+		}
+
+		&.down {
+			top: 5px;
+			right: 0;
+			left: 2px;
+			transform: rotate(90deg);
+		}
+	}
+
+	.arrow-bg {
+		background-color: $light-gray;
+		height: 25px;
+		width: 25px;
+		position: absolute;
+		right: 0;
+	}
+}
+
+.input {
+
+	&__filter {
+		border: 2px solid $dark-blue;
+		width: 100%;
+		padding: 10px;
+		transition: .3s;
+
+		&::placeholder {
+			color: $dark-gray;
+			font-size: 1.2em;
+			font-style: italic;
+		}
+
+		&:focus,
+		&:active {
+			border-color: $teal;
+		}
+	}
+}
+
+.select {
+	padding: 10px;
+	height: 40px;
+	display: inline-block;
+	cursor: pointer;
+
+	&__selected-item {
+		color: $dark-blue;
+		font-size: 1.15em;
+		font-weight: 500;
+	}
+
+	ul {
+		background-color: $light-gray;
+		box-shadow: 0 2px 2px 1px rgba($dark-gray, 0.8);
+		list-style: none;
+		padding: 10px 20px;
+		margin: 0;
+		position: absolute;
+		left: 250px;
+		top: 35px;
+		width: auto;
+		z-index: 1;
+
+		li {
+			color: $teal;
+			border-left: 1px solid $blue;
+			padding-left: 5px;
+
+			&:first-of-type {
+				margin-top: 10px;
+			}
+
+			&:before {
+				content: '> '
+			}
+
+			&:hover,
+			&:focus,
+			&:active {
+				color: $dark-blue;
+			}
+		}
+	}
+
+	.show {
+		display:inline-block;
+	}
+
+	.hide {
+		display:none;
+	}
+}
+
+.btn {
+	padding: 0.75em 1.75em;
+	font-weight: 600;
+	background-color: transparent;
+	border: none;
+	transition: all 0.6s ease;
+	position: relative;
+	pointer-events: all;
+
+	&:focus,
+	&:hover {
+		outline: 0;
+		cursor: pointer;
+		box-shadow: 2px 4px 2px 1px $dark-gray;
+	}
+
+	&--primary {
+		background: $teal;
+		color: $light-gray;
+		box-shadow: 2px 4px 2px 1px rgba($dark-gray, 0.6);
+
+		&:focus,
+		&:hover {
+			background: darken($teal, 5%);
+		}
+	}
+}

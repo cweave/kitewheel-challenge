@@ -1,0 +1,51 @@
+
+
+.nav {
+
+	&-bar {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		border-top: 3px solid $dark-gray;
+		border-bottom: 4px solid $orange;
+
+		h1 {
+			margin: 0;
+			margin-left: 1em;
+		}
+
+		nav {
+			margin-right: 1em;
+		}
+
+		a {
+			color: $teal;
+			text-decoration: none;
+			padding: 0 14px;
+
+			&.active,
+			&:hover,
+			&:focus,
+			&:active {
+				color: $dark-blue;
+			}
+		}
+
+		img {
+			width: 24px;
+			margin-right: 10px;
+			background-color: $light-gray;
+			padding: 3px;
+		}
+	}
+
+	&-items {
+		display: flex;
+		align-items: center;
+
+		li {
+			display: inline-flex;
+			list-style: none;
+		}
+	}
+}
